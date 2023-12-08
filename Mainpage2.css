@@ -1,0 +1,193 @@
+/* Second Section  */
+
+.top_stories_container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 20px;
+}
+.top-story-1{
+    border-top: 1px solid rgb(230, 230, 230);
+}
+.top-story-1 div:last-child p{
+    border-bottom: 1px solid rgb(230, 230, 230);
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+.top-story-1 div:last-child p:last-child{
+    border: none;
+}
+.top-story-1 img{
+    width: 100%;
+}
+.top-story-1 h2{
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+.top-story-2{
+    /* width: 555px; */
+    border-top: 1px solid rgb(230, 230, 230);
+}
+.top-story-2 img{
+    width: 100%;
+}
+.top-story-2 h2{
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+.a_short{
+    display: block;
+    visibility: visible;
+    padding: 4px 0 8px;
+
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 0;
+    text-align: right;
+    color: #6e6e6e;
+}
+.top-story-2 div:last-child{
+    border: none;
+}
+.top-story-3 img{
+    width: 100%;
+}
+.top-story-3 div:last-child{
+    border: none;
+}
+
+.landscap-card1{
+    box-sizing: border-box  ;
+    display: grid;
+    grid-template-columns: 135px auto;
+    column-gap: 12px;
+
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+.landscap-card1 div:first-child img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.landscap-card2{
+    box-sizing: border-box  ;
+    display: grid;
+    grid-template-columns: 100px auto;
+    column-gap: 10px;
+
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+
+.landscap-card2 div:first-child img{
+    width: 100%;
+    height: auto;
+}
+
+.container__title-text, .container__title_url-text {
+    display: inline-block;
+    font-family: cnn_sans_display,helveticaneue,Helvetica,Arial,Utkal,sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 16px;
+    margin-top: 10px;
+}
+
+.icon-sig-video, .container__text .icon-sig-video {
+    float: left;
+    height: 20px;
+    margin-right: 4px;
+    margin-top: 2px;
+    padding-bottom: 3px;
+    fill: #a4001e;
+}
+.container__title {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    margin-bottom: var(--theme-container-title__margin-bottom);
+}
+.container__title:before{
+    /* content: ""; */
+    background-color: #cc0000;
+    height: 4px;
+    transition: width .3s;
+    transition-timing-function: ease-in-out;
+    width: 16px;
+}
+.container__title:after, .container__title:before {
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+/* Third section  */
+.third-section{
+    margin-top: 20px;
+}
+.actor_stories_container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 20px;
+}
+.actor_story2 img{
+    width: 100%;
+}
+.actor_story1 video{
+    width: 100%;
+}
+.actor_story1 h2{
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+.actor_story2 h2{
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+.actor_story3 h2{
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+.actor_story3 img{
+    width: 100%;
+}
+.landscap-card1_other{
+    grid-template-columns: 135px auto;
+}
+.landscap-card1_other div:first-child img{
+    height: auto;
+}
+
+@media screen and (max-width: 1166px) {
+    .actor_stories_container{
+        grid-template-columns: 1fr 1.5fr 1fr;
+    }
+}
+@media screen and (max-width: 1058px) {
+    .actor_stories_container{
+        grid-template-columns: 1fr 1.2fr 1fr;
+    }
+}
+@media screen and (max-width: 960px) {
+    .top_stories_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .actor_stories_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
