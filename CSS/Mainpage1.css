@@ -44,9 +44,9 @@ main {
 
 .top_news_container ul li {
     color: #0c0c0c;
-    font-family: var(--theme-container__font-family);
+    font-family: cnn_sans_display,helveticaneue,Helvetica,Arial,Utkal,sans-serif ;
     font-size: 16px;
-    font-weight: var(--theme-container__font-weight);
+    font-weight: 400;
     letter-spacing: .5px;
     line-height: 28px;
 }
@@ -77,6 +77,13 @@ main {
     border-bottom: 1px solid rgb(230, 230, 230);
     margin-bottom: 21px;
     padding-bottom: 21px;
+
+    color: #0c0c0c;
+    font-family: cnn_sans_display,helveticaneue,Helvetica,Arial,Utkal,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 22px;
 }
 
 .top-news_card-heading {
@@ -110,6 +117,8 @@ main {
     border-bottom: 1px solid rgb(230, 230, 230);
     margin-bottom: 12px;
     padding-bottom: 12px;
+
+    color: #0c0c0c; font-family: cnn_sans_display,helveticaneue,Helvetica,Arial,Utkal,sans-serif; font-size: 16px; font-weight: 400; letter-spacing: .5px; line-height: 28px;
 }
 .top-story-1 div:last-child p:last-child{
     border: none;
@@ -127,6 +136,14 @@ main {
 }
 .top-story-2 img{
     width: 100%;
+}
+.top-story-2 p{
+    color: #0c0c0c;
+    font-family: cnn_sans_display,helveticaneue,Helvetica,Arial,Utkal,sans-serif ;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 22px;
 }
 .top-story-2 h2{
     border-bottom: 1px solid #e6e6e6;
@@ -152,6 +169,14 @@ main {
 }
 .top-story-3 div:last-child{
     border: none;
+}
+.top-story-3 p{
+    color: #0c0c0c;
+    font-family: cnn_sans_display,helveticaneue,Helvetica,Arial,Utkal,sans-serif ;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 22px;
 }
 
 .landscap-card1{
@@ -245,6 +270,14 @@ main {
 .actor_story1 video{
     width: 100%;
 }
+.actor_story1 p{
+    color: #0c0c0c;
+    font-family: cnn_sans_display,helveticaneue,Helvetica,Arial,Utkal,sans-serif ;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 22px;
+}
 .actor_story1 h2{
     border-bottom: 1px solid #e6e6e6;
     margin-bottom: 12px;
@@ -254,6 +287,22 @@ main {
     border-bottom: 1px solid #e6e6e6;
     margin-bottom: 12px;
     padding-bottom: 12px;
+}
+.actor_story2 p{
+    color: #0c0c0c;
+    font-family: cnn_sans_display,helveticaneue,Helvetica,Arial,Utkal,sans-serif ;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 22px;
+}
+.actor_story3 p{
+    color: #0c0c0c;
+    font-family: cnn_sans_display,helveticaneue,Helvetica,Arial,Utkal,sans-serif ;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 22px;
 }
 .actor_story3 h2{
     border-bottom: 1px solid #e6e6e6;
@@ -282,6 +331,9 @@ main {
 }
 
 @media screen and (max-width: 960px) {
+    main {
+        padding: 30px 22px 0px 22px;
+    }
     .top_news-1 h1 {
         font-size: 32px;
     }
@@ -298,8 +350,8 @@ main {
 }
 
 @media screen and (max-width: 550px) {
-
     main {
-        padding: 30px 22px 0px 22px;
+        padding: 30px 12px 0px 12px;
     }
+    
 }

@@ -23,8 +23,7 @@ header {
 /* Navbar  */
 
 .cnn-navbar {
-    /* border: 1px solid green; */
-    background-color: #000000ed;
+    background-color: black;
     display: flex;
     justify-content: space-between;
     height: 40px;
@@ -49,12 +48,11 @@ header {
 
 .nav-ul-1 li a {
     text-decoration: none;
-    color: var(--theme-copy-accent);
-    color: white;
+    color: #e6e6e6;
     font-size: 15px;
     display: block;
     white-space: nowrap;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .nav-ul-1 li:nth-child(3) {
