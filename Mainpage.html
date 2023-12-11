@@ -42,7 +42,12 @@
             <li><a href="">Entertainment</a></li>
             <li><a href="">Style</a></li>
             <li><a href="">Travel</a></li>
-            <li><a href="">More</a></li>
+            <li class="dropdown" tabindex="0"><a href="">More</a>
+                <div class="dropdown-content">
+                    <a href="">Sport</a>
+                    <a href="">video</a>
+                </div>
+            </li>
         </ul>
         <ul class="nav-ul-btns">
             <li> <a href="">Audio</a></li>
@@ -388,7 +393,7 @@
                         <p>A beautiful ancient coastline that few travelers have heard of</p>
                     </div>
                 </div>
-                <div class="featured3 boxs">
+                <div class="featured3 boxs border-none">
                     <!-- <div class="container__title" data-editable="titleLink">
                         <h3 class="container__title-text container_lead-plus-headlines-with-images__title-text"
                             data-editable="title">MORE TOP STORIES</h3>
@@ -513,8 +518,117 @@
                 </div>
             </div>
         </section>
+        <section class="fifth-section">
+            <h3 class="watch__heading">Watch It</h3>
+            <div class="watch__grid_container">
+                <div >
+                    <div class="watch_box">
+                        <img src="Img/watch1.webp" alt="">
+                    </div>
+                    <span class="watch-description">'She wasn't too interested in talking': Cop pulls over 2-year-old</span>
+                </div>
+                <div >
+                    <div class="watch_box">
+                        <img src="Img/watch2.webp" alt="">
+                    </div>
+                    <span class="watch-description">This deceptively simple term could be key to the planet's survival</span>
+                </div>
+                <div >
+                    <div class="watch_box">
+                        <img src="Img/watch4.webp" alt="">
+                    </div>
+                    <span class="watch-description">This country may have the world's only space station by 2031</span>
+                </div>
+                <div >
+                    <div class="watch_box">
+                        <img src="Img/watch3.webp" alt="">
+                    </div>
+                    <span class="watch-description">See pilot rescued after plane crashes in alligator-infested water</span>
+                </div>
+            </div>
+        </section>
+        <section class="sixth-section">
+            <h2 class="zone__title zone--title" data-editable="title">Photos You Should See</h2>
+            <div class="photo__see_grid">
+                <div class="photo__see1">
+                    <div class="photo__see">
+                        <img src="Img/see1.jpg" alt="">
+                        <span>Inside Michael Jordan’s slice of paradise</span>
+                    </div>
+                    <div class="photo__see">
+                        <img src="Img/see2.jpg" alt="">
+                        <span>Six bull sharks made their home on a golf course. Then they vanished</span>
+                    </div>
+                    <div class="photo__see">
+                        <div class="photo__relative">
+                            <img src="Img/see3.jpg" alt="">
+                            <div class="card__label card__label--type-gallery">
+                                <span class="card__label-icon"></span>
+                                <span class="card__label-bull-span">
+                                    <span class="card__label-indicator"></span>Gallery</span>
+                            </div>
+                        </div>
+                        <span>20 must-visit World Heritage Sites</span>
+                    </div>
+                    <div class="photo__see">
+                        <div class="photo__relative">
+                            <img src="Img/see4.jpg" alt="">
+                            <div class="card__label card__label--type-gallery">
+                                <span class="card__label-icon"></span>
+                                <span class="card__label-bull-span">
+                                    <span class="card__label-indicator"></span>Gallery</span>
+                            </div>
+                        </div>
+                        <span>The most delicious Turkish dishes</span>
+                    </div>
+                    <div class="photo__see">
+                        <img src="Img/see6.jpg" alt="">
+                        <span>The most dangerous extreme sport you’ve never heard of</span>
+                    </div>
+                    <div class="photo__see">
+                        <div class="photo__relative">
+                            <img src="Img/see5.jpg" alt="">
+                            <div class="card__label card__label--type-gallery">
+                                <span class="card__label-icon"></span>
+                                <span class="card__label-bull-span">
+                                    <span class="card__label-indicator"></span>Gallery</span>
+                            </div>
+                        </div>
+                        <span>Pirelli Calendar 2024: Who’s getting their close up this year?</span>
+                    </div>
+                </div>
+                <div class="photo__see2"></div>
+            </div>
+        </section>
     </main>
-
+    <section class="femous__person">
+        <!-- In Case You Missed It -->
+        <h3 class="missed_it_heading border-none">In Case You Missed It</h3>
+        <div class="Missed__It_container">
+            <div class="missed_it1">
+                <div>
+                    <img src="Img/Gandhi.jpg" alt="">
+                    <span style="color: #b1b1b1;" class="a_short">Eddie Adams/AP</span>
+                </div>
+                <span class="container__headline-text">This ‘American Gandhi’ never got the attention he deserved
+                    because he was gay. A new film may change that</span>
+            </div>
+            <div class="missed_it2">
+                <p>Hundreds of thousands of galaxies fill a single image taken by new telescope</p>
+                <p>The water has turned a shocking shade of magenta in this Hawaii refuge
+                </p>
+                <p>China blames Canada for ‘malicious, provocative’ moves after close midair intercepts over South China
+                    Sea</p>
+                <p>You can rent Martha’s Stewart’s farm guesthouse — for just $11.23</p>
+                <p>Caster Semenya says taking testosterone-reducing medication was ‘hell’</p>
+                <p>Inside Dolly Parton’s new resort lodge in the Tennessee mountains</p>
+                <p>CNN Exclusive Chinese jet fired flares close to submarine-hunting helicopter in South China Sea,
+                    Canadian Navy says</p>
+                <p class="border-none">Mosquitoes are driving these birds to extinction. With only 5 left in the wild, scientists are racing
+                    to save the species</p>
+            </div>
+        </div>
+    </section>
     <footer>
         <section class="footer_big_section">
             <div class="footer_search_bar">
@@ -688,16 +802,7 @@
                     </ul>
                 </div>
                 <div class="footer_box">
-                    <!-- <h3>World</h3>
-                    <ul class="footer_big_ul">
-                        <li>Africa</li>
-                        <li>Americas</li>
-                        <li>Asia</li>
-                        <li>Australia</li>
-                        <li>China</li>
-                        <li>Europe</li>
-                        <li>India</li>
-                    </ul> -->
+
                 </div>
             </div>
         </section>
@@ -771,6 +876,34 @@
                     </ul>
                 </div>
             </nav>
+        </section>
+        <section class="footer_nav_other">
+            <nav class="footer__links" data-editable="footerLinks">
+                <a href="" class="footer__link">
+                    Terms of Use
+                </a>
+                <a href="" class="footer__link">
+                    Privacy Policy
+                </a>
+                <a href="#" class="uclink footer__link" style="display: block; text-align: center;">Cookie Settings</a>
+                <a href="" target="_blank" class="footer__link">
+                    Ad Choices
+                </a>
+                <a href="" class="footer__link">
+                    Accessibility &amp; CC
+                </a>
+                <a href="" class="footer__link">
+                    About
+                </a>
+                <a href="" class="footer__link">
+                    Newsletters
+                </a>
+                <a href="" class="footer__link">
+                    Transcripts
+                </a>
+            </nav>
+            <p class="footer__copyright-text" data-editable="copyrightText">© 2023 Cable News Network. A Warner Bros.
+                Discovery Company. All Rights Reserved. <br> CNN Sans ™ &amp; © 2016 Cable News Network.</p>
         </section>
     </footer>
 </body>

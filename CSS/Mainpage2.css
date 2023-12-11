@@ -1,56 +1,59 @@
-/* Featured Sections  */
-.forth-section{
-    margin-top: 20px;
+/* You Missed it  */
+.femous__person{
+    padding: 0 32px;
+    padding-top: 40px;
+    background-color: #0c0c0c;
+    border-bottom: 1px solid #404040;
+    
 }
-.border-none{
-    border: none;
-}
-.Featured_Sections_container {
+.Missed__It_container{
+    background-color: #0c0c0c;
+    color: #fff;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.4rem;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 25px;
 }
-
-.zone__title {
-    color: #0c0c0c;
-    line-height: 30px;
-    font-family: cnn_sans_display,helveticaneue,Helvetica,Arial,Utkal,sans-serif;
-    margin-bottom: 24px;
-    border: none;
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.boxs img {
+.missed_it1 img{
     width: 100%;
 }
-.boxs img:hover{
-    opacity: 0.7;
+.missed_it1 img:hover{
+    opacity: 0.4;
 }
-.boxs{
-    border-top: 1px solid #e6e6e6;
+.container__headline-text{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700!important;
+    letter-spacing: 0;
 }
-.featured_descriptions p{
-    color: #0c0c0c;
-    font-family: cnn_sans_display,helveticaneue,Helvetica,Arial,Utkal,sans-serif ;
+.missed_it2 p{
+    border: none;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #404040;
+
+    /* color: #0c0c0c; */
+    font-family: cnn_sans_display,helveticaneue,Helvetica,Arial,Utkal,sans-serif;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: .5px;
     line-height: 22px;
 }
-.featured_descriptions p,
-h2 {
-    border-bottom: 1px solid #e6e6e6;
-    margin: 0 0 12px;
-    padding: 0 0 12px;
+.missed_it_heading{
+    margin: 0 0 24px;
+    color: #fff;
+    line-height:  30px;
+    font-family: cnn_sans_display,helveticaneue,Helvetica,Arial,Utkal,sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding-bottom: none;
 }
-.featured_descriptions p:last-child{
+.missed_it2 p:last-child{
     border: none;
 }
 
 @media screen and (max-width: 960px) {
-    .Featured_Sections_container {
-        grid-template-columns: repeat(1, 1fr);
+    .Missed__It_container{
+        grid-template-columns: 1fr;
     }
     
 }
