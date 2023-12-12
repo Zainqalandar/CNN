@@ -276,6 +276,10 @@ main {
     width: 16px;
 }
 
+.container__title:before:hover {
+    width: 100%;
+}
+
 .container__title:after,
 .container__title:before {
     content: '';
@@ -375,6 +379,25 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.4rem;
+}
+
+.arow-container {
+    display: flex;
+    align-items: center;
+}
+
+#arow {
+    display: none;
+    margin-left: -316px;
+    margin-bottom: 6px;
+}
+
+.hover-arow {
+    cursor: pointer;
+}
+
+.hover-arow:hover~#arow {
+    display: block;
 }
 
 .zone__title {
@@ -494,28 +517,33 @@ h2 {
     font-family: cnn_sans_display, helveticaneue, Helvetica, Arial, Utkal, sans-serif;
     margin-bottom: 24px;
 }
+
 .border-none {
     border: none;
 }
 
 /* Watch it  */
-.fifth-section{
+.fifth-section {
     margin-top: 50px;
 }
-.watch__grid_container{
+
+.watch__grid_container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 64px;
     grid-column-gap: 24px;
 }
-.watch_box{
+
+.watch_box {
     position: relative;
 }
-.watch_box img{
+
+.watch_box img {
     width: 100%;
     height: 100%;
 }
-.watch_box::after{
+
+.watch_box::after {
     -webkit-font-smoothing: antialiased;
     content: "";
     font-family: cnn-icons;
@@ -530,7 +558,8 @@ h2 {
     left: 0;
     z-index: 9;
 }
-.watch_box::before{
+
+.watch_box::before {
     -webkit-font-smoothing: antialiased;
     content: 'VIDEO';
     position: absolute;
@@ -541,29 +570,115 @@ h2 {
     font-weight: bold;
     font-size: 12px;
 }
-.watch-description{
-        /* font-weight: 300; */
-        line-height: 26px;
-        letter-spacing: 0;
-        -webkit-font-smoothing: antialiased;
 
-        /* font-family: CNN,Helvetica Neue,Helvetica,Arial,Utkal,sans-serif; */
-        color: #0c0c0c;
-        margin: 0px 0px 0px 0px;
-        text-align: left;
-        line-height: 1.25;
-        font-size: 20px;
-        font-weight: bold;
-}
-.watch__heading{
+.watch-description {
+    /* font-weight: 300; */
+    line-height: 26px;
+    letter-spacing: 0;
+    -webkit-font-smoothing: antialiased;
+
+    /* font-family: CNN,Helvetica Neue,Helvetica,Arial,Utkal,sans-serif; */
     color: #0c0c0c;
-    font-family: cnn_sans_display,helveticaneue,Helvetica,Arial,Utkal,sans-serif;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    line-height: 1.25;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.watch__heading {
+    color: #0c0c0c;
+    font-family: cnn_sans_display, helveticaneue, Helvetica, Arial, Utkal, sans-serif;
     margin-top: 0;
     margin-bottom: 24px;
 
     font-size: 30px;
     line-height: 30px;
     font-weight: 700;
+}
+
+/* You Missed it  */
+.femous__person {
+    padding: 0 32px;
+    padding-top: 40px;
+    background-color: #0c0c0c;
+    border-bottom: 1px solid #404040;
+
+}
+
+.Missed__It_container {
+    background-color: #0c0c0c;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 25px;
+    padding-bottom: 45px;
+}
+
+.gandhi__g {
+    position: relative;
+}
+
+.card__label-gandhi {
+    font-size: 10px;
+    font-weight: 700;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    color: #c00;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 8px 16px;
+}
+
+.missed_it1 img {
+    width: 100%;
+}
+
+.missed_it1 img:hover {
+    opacity: 0.4;
+}
+
+.container__headline-text {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700 !important;
+    letter-spacing: 0;
+}
+
+.missed_it2 p {
+    border: none;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #404040;
+
+    /* color: #0c0c0c; */
+    font-family: cnn_sans_display, helveticaneue, Helvetica, Arial, Utkal, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 22px;
+}
+
+.missed_it_heading {
+    margin: 0 0 24px;
+    color: #fff;
+    line-height: 30px;
+    font-family: cnn_sans_display, helveticaneue, Helvetica, Arial, Utkal, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding-bottom: none;
+}
+
+.missed_it2 p:last-child {
+    border: none;
 }
 
 @media screen and (max-width: 1166px) {
@@ -606,6 +721,14 @@ h2 {
     .photo__see_grid {
         grid-template-columns: 1fr;
     }
+
+    .femous__person {
+        padding: 0 16px;
+    }
+
+    .Missed__It_container {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -615,12 +738,12 @@ h2 {
 }
 
 @media screen and (max-width: 478px) {
-    .photo__see1{
+    .photo__see1 {
         grid-template-columns: repeat(1, 1fr);
-    
+
     }
 
-    .watch__grid_container{
+    .watch__grid_container {
         grid-template-columns: repeat(1, 1fr);
     }
 }

@@ -20,44 +20,329 @@
 
 <body>
     <header>
-        <div class="banner-sticky"></div>
-    </header>
-    <nav class="cnn-navbar sticky">
-        <ul class="nav-ul-1">
-            <svg class="header__menu-icon-svg" role="img" viewBox="0 0 64 63" xmlns="https://www.w3.org/2000/svg"
-                aria-hidden="true" aria-haspopup="true" aria-expanded="false">
-                <path d="M52.75,47.84H11.25a2.08,2.08,0,1,0,0,4.16h41.5a2.08,2.08,0,1,0,0-4.16Z"></path>
-                <path d="M52.75,28.92H11.25a2.08,2.08,0,1,0,0,4.16h41.5a2.08,2.08,0,1,0,0-4.16Z"></path>
-                <path d="M11.25,14.16h41.5a2.08,2.08,0,1,0,0-4.16H11.25a2.08,2.08,0,1,0,0,4.16Z"></path>
-            </svg>
-            <div class="cnn_log">
-                <img src="Img/cnn_logo.png" alt="">
-            </div>
-            <li><a href="">US</a></li>
-            <li><a href="">WORLD</a></li>
-            <li><a href="">Politics</a></li>
-            <li><a href="">Business</a></li>
-            <li><a href="">Oplnion</a></li>
-            <li><a href="">Health</a></li>
-            <li><a href="">Entertainment</a></li>
-            <li><a href="">Style</a></li>
-            <li><a href="">Travel</a></li>
-            <li class="dropdown" tabindex="0"><a href="">More</a>
-                <div class="dropdown-content">
-                    <a href="">Sport</a>
-                    <a href="">video</a>
+        <!-- <div class="banner-sticky"></div> -->
+        <nav class="cnn-navbar sticky">
+            <ul class="nav-ul-1">
+                <a tabindex="0" class="header__menu-icon-link" onclick="toggleSubnav()">
+                    <svg class="header__menu-icon-svg" role="img" viewBox="0 0 64 63"
+                        xmlns="https://www.w3.org/2000/svg" aria-hidden="true" aria-haspopup="true"
+                        aria-expanded="false">
+                        <path d="M52.75,47.84H11.25a2.08,2.08,0,1,0,0,4.16h41.5a2.08,2.08,0,1,0,0-4.16Z"></path>
+                        <path d="M52.75,28.92H11.25a2.08,2.08,0,1,0,0,4.16h41.5a2.08,2.08,0,1,0,0-4.16Z"></path>
+                        <path d="M11.25,14.16h41.5a2.08,2.08,0,1,0,0-4.16H11.25a2.08,2.08,0,1,0,0,4.16Z"></path>
+                    </svg>
+                    <svg class="header__close-icon-svg" role="img" width="64" height="64" viewBox="0 0 64 64" fill=""
+                        xmlns="https://www.w3.org/2000/svg" aria-labelledby="closeIconTitle" aria-haspopup="true"
+                        aria-expanded="false">
+                        <title id="closeIconTitle">Close icon</title>
+                        <path
+                            d="M29.1,32L10.6,50.6c-0.8,0.8-0.8,2.1,0,2.9c0.8,0.8,2.1,0.8,2.9,0L32,34.9l18.5,18.5 c0.8,0.8,2.1,0.8,2.9,0c0.8-0.8,0.8-2.1,0-2.9L34.9,32l18.5-18.5c0.8-0.8,0.8-2.1,0-2.9s-2.1-0.8-2.9,0L32,29.1L13.5,10.6 c-0.8-0.8-2.1-0.8-2.9,0c-0.8,0.8-0.8,2.1,0,2.9L29.1,32z">
+                        </path>
+                    </svg>
+                </a>
+                <div class="cnn_log">
+                    <img src="Img/cnn_logo.png" alt="">
                 </div>
-            </li>
-        </ul>
-        <ul class="nav-ul-btns">
-            <li> <a href="">Audio</a></li>
-            <li> <a href="">Live TV</a></li>
-            <li><span class="material-symbols-outlined">
-                    search
-                </span></li>
-            <li><a id="login-btn" href="">Log In</a></li>
-        </ul>
-    </nav>
+                <li><a href="">US</a></li>
+                <li><a href="">WORLD</a></li>
+                <li><a href="">Politics</a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">Oplnion</a></li>
+                <li><a href="">Health</a></li>
+                <li><a href="">Entertainment</a></li>
+                <li><a href="">Style</a></li>
+                <li><a href="">Travel</a></li>
+                <li class="dropdown" tabindex="0"><a href="">More</a>
+                    <div class="dropdown-content">
+                        <a href="">Sport</a>
+                        <a href="">video</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="nav-ul-btns">
+                <li> <a href="">Audio</a></li>
+                <li> <a href="">Live TV</a></li>
+                <li><span class="material-symbols-outlined">
+                        search
+                    </span></li>
+                <li><a id="login-btn" href="">Log In</a></li>
+            </ul>
+        </nav>
+        <section class="footer_big_section subnav__footer_section" id="subnavFooterSection">
+            <div class="footer_search_bar">
+                <form action="https://www.cnn.com/search" name="q" class="search-bar__form" role="search">
+                    <input placeholder="Search CNN..." aria-label="Search" class="search-bar__input" type="text"
+                        autocomplete="off" name="q" data-analytics-prop-click-action="search-query-edit">
+                    <button type="submit" class="search-bar__submit" title="Submit"
+                        data-analytics-prop-click-action="search-query-submit">
+                        <span class="search-bar__button-text">Search</span>
+                        <span class="search-bar__arrow">
+                            <svg class="icon-ui-arrow-right-thick" width="24" height="24" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.003 3.471l7.464 7.303a1.73 1.73 0 010 2.498l-7.631 7.259c-.713.688-1.921.623-2.54-.194-.496-.654-.34-1.6.25-2.17l4.918-4.666H3.5c-.776 0-1.42-.598-1.493-1.356L2 12.001l.007-.144A1.505 1.505 0 013.5 10.501h12.972l-4.751-4.66c-.594-.573-.755-1.528-.252-2.183.62-.81 1.824-.872 2.534-.187z">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="search-bar__search-icon"><svg class="icon-ui-search" width="24" height="24"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.068 10.427c0-2.953 2.394-5.356 5.338-5.356 2.943 0 5.338 2.403 5.338 5.356 0 2.952-2.395 5.355-5.338 5.355-2.944 0-5.338-2.403-5.338-5.355m14.697 8.201l-4.277-4.29a6.41 6.41 0 001.324-3.911c0-3.55-2.868-6.427-6.406-6.427S4 6.877 4 10.427c0 3.549 2.868 6.426 6.406 6.426a6.363 6.363 0 003.956-1.374l4.271 4.286a.799.799 0 001.132 0 .806.806 0 000-1.137">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </form>
+            </div>
+            <div class="subnav__titles">
+                <div class="subnav_title">
+                    <h3 onclick="togglebtn()">Edition
+                        <svg class="icon-ui-caret-down rotate" width="24" height="24" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.478 17.218a.637.637 0 01-.946 0L2.206 7.2c-.225-.242-.28-.632-.093-.91a.613.613 0 01.975-.088l8.917 9.579 8.878-9.538c.225-.242.589-.3.847-.1.33.255.357.752.082 1.048l-9.334 10.027z">
+                            </path>
+                        </svg>
+                    </h3>
+                </div>
+                <div class="subnav_title hidden_subnav_title">
+                    <h4>
+                        US</h4>
+                </div>
+                <div class="subnav_title hidden_subnav_title">
+                    <h4>
+                        International</h4>
+                </div>
+                <div class="subnav_title hidden_subnav_title">
+                    <h4>
+                        Arabic</h4>
+                </div>
+                <div class="subnav_title hidden_subnav_title">
+                    <h4>
+                        Español</h4>
+                </div>
+                <div class="subnav_title hidden_subnav_title">
+                </div>
+                <div class="subnav_title hidden_subnav_title">
+                </div>
+            </div>
+            <div class="footer_grid subnav__foo">
+                <div class="footer_box " id="log__for_small">
+                    <img src="Img/cnn_logo.png" alt="">
+                </div>
+                <div class="footer_box">
+                    <h3>World</h3>
+                    <ul class="footer_big_ul">
+                        <li>Africa</li>
+                        <li>Americas</li>
+                        <li>Asia</li>
+                        <li>Australia</li>
+                        <li>China</li>
+                        <li>Europe</li>
+                        <li>India</li>
+                        <li>Middle East</li>
+                        <li>United Kingdom</li>
+                    </ul>
+                </div>
+                <div class="footer_box">
+                    <h3>US Politics</h3>
+                    <ul class="footer_big_ul">
+                        <li>The Biden Presidency</li>
+                        <li>Facts First</li>
+                        <li>2024 Elections</li>
+                    </ul>
+                </div>
+                <div class="footer_box">
+                    <h3>Business</h3>
+                    <ul class="footer_big_ul">
+                        <li>Markets</li>
+                        <li>Tech</li>
+                        <li>Media</li>
+                        <li>Calculators</li>
+                        <li>Videos</li>
+                    </ul>
+                </div>
+                <div class="footer_box">
+                    <h3>Markets</h3>
+                    <ul class="footer_big_ul">
+                        <li>Pre-markets</li>
+                        <li>After-Hours</li>
+                        <li>Market Movers</li>
+                        <li>Fear & Greed</li>
+                        <li>World Markets</li>
+                        <li>Investing</li>
+                        <li>Markets Now</li>
+                        <li>Before the Bell</li>
+                        <li>Nightcap</li>
+                    </ul>
+                </div>
+                <div class="footer_box">
+                    <h3>Health</h3>
+                    <ul class="footer_big_ul">
+                        <li>Life, But Better</li>
+                        <li>Fitness</li>
+                        <li>Food</li>
+                        <li>Sleep</li>
+                        <li>Mindfulness</li>
+                        <li>Relationships</li>
+                    </ul>
+                </div>
+                <div class="footer_box">
+                    <h3>Entertainment</h3>
+                    <ul class="footer_big_ul">
+                        <li>Movies</li>
+                        <li>Television</li>
+                        <li>Celebrity</li>
+                    </ul>
+                </div>
+                <div class="footer_box">
+                    <h3>Tech</h3>
+                    <ul class="footer_big_ul">
+                        <li>Innovate</li>
+                        <li>Gadget</li>
+                        <li>Foreseeable Future</li>
+                        <li>Mission: Ahead</li>
+                        <li>Upstarts</li>
+                        <li>Work Transformed</li>
+                        <li>Innovative Cities</li>
+                    </ul>
+                </div>
+                <div class="footer_box">
+                    <h3>Style</h3>
+                    <ul class="footer_big_ul">
+                        <li>Arts</li>
+                        <li>Design</li>
+                        <li>Fashion</li>
+                        <li>Architecture</li>
+                        <li>Luxury</li>
+                        <li>Beauty</li>
+                        <li>Video</li>
+                    </ul>
+                </div>
+                <div class="footer_box">
+                    <h3>Travel</h3>
+                    <ul class="footer_big_ul">
+                        <li>Destinations</li>
+                        <li>Food & Drink</li>
+                        <li>Stay</li>
+                        <li>News</li>
+                        <li>Videos</li>
+                    </ul>
+                </div>
+                <div class="footer_box">
+                    <h3>Sports</h3>
+                    <ul class="footer_big_ul">
+                        <li>Football</li>
+                        <li>Tennis</li>
+                        <li>Golf</li>
+                        <li>Motorsport</li>
+                        <li>US Sports</li>
+                        <li>Olympics</li>
+                        <li>Climbing</li>
+                        <li>Esports</li>
+                        <li>Hockey</li>
+                    </ul>
+                </div>
+                <div class="footer_box">
+                    <h3>Videos</h3>
+                    <ul class="footer_big_ul">
+                        <li>Live TV</li>
+                        <li>Digital Studios</li>
+                        <li>CNN Films</li>
+                        <li>HLN</li>
+                        <li>TV Schedule</li>
+                        <li>TV Shows A-Z</li>
+                        <li>CNNVR</li>
+                    </ul>
+                </div>
+                <div class="footer_box">
+                    <h3>Features</h3>
+                    <ul class="footer_big_ul">
+                        <li>As Equals</li>
+                        <li>Call to Earth</li>
+                        <li>Freedom Project</li>
+                        <li>Impact Your World</li>
+                        <li>Inside Africa</li>
+                        <li>2 Degrees</li>
+                        <li>CNN Heroes</li>
+                        <li>All Features</li>
+                    </ul>
+                </div>
+                <div class="footer_box">
+                    <h3>Weather</h3>
+                    <ul class="footer_big_ul">
+                        <li>Climate</li>
+                        <li>Wildfire Tracker</li>
+                        <li>Video</li>
+                    </ul>
+                </div>
+                <div class="footer_box">
+                    <h3>More</h3>
+                    <ul class="footer_big_ul">
+                        <li>Photos</li>
+                        <li>Longform</li>
+                        <li>Investigations</li>
+                        <li>CNN Profiles</li>
+                        <li>CNN Leadership</li>
+                        <li>CNN Newsletters</li>
+                        <li>Work for CNN</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subnav__under-nav">
+                <span class="social-links__copy">Follow CNN</span>
+                <ul class="footer-under-ul">
+                    <li class="social-links__items">
+                        <svg class="facebook-icon" aria-label="Facebook" width="64" height="64" viewBox="0 0 64 64"
+                            fill="" xmlns="https://www.w3.org/2000/svg" aria-hidden="true">
+                            <path
+                                d="M56,5.1H8c-1.6,0-3,1.4-3,3v48.8c0,1.7,1.3,3,3,3h25.9V38.7h-7v-8.3h7v-6.1 c0-7.1,4.3-10.9,10.5-10.9c3,0,5.9,0.2,6.7,0.3v7.7h-4.7c-3.4,0-4.1,1.6-4.1,4v5h8.1l-1,8.3h-7v21.2H56c1.6,0,3-1.4,3-3V8.1 C59,6.4,57.7,5.1,56,5.1">
+                            </path>
+                        </svg>
+                    </li>
+                    <li class="social-links__items">
+                        <svg class="twitter-icon" aria-label="Twitter" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" xmlns="https://www.w3.org/2000/svg" aria-hidden="true">
+                            <path fill=""
+                                d="M13.903 10.469 21.348 2h-1.764l-6.465 7.353L7.955 2H2l7.808 11.12L2 22h1.764l6.828-7.765L16.044 22H22l-8.097-11.531Zm-2.417 2.748-.791-1.107L4.4 3.3h2.71l5.08 7.11.791 1.107 6.604 9.242h-2.71l-5.389-7.542Z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li class="social-links__items">
+                        <svg class="instagram-icon" aria-label="Instagram" width="64" height="64" viewBox="0 0 64 64"
+                            fill="" xmlns="https://www.w3.org/2000/svg" aria-hidden="true">
+                            <path
+                                d="M47,13.2c-1.9,0-3.5,1.6-3.5,3.6s1.6,3.6,3.5,3.6s3.5-1.6,3.5-3.6S49,13.2,47,13.2 L47,13.2z M31.9,23c-5.1,0-9.3,4.3-9.3,9.5s4.2,9.5,9.3,9.5s9.3-4.3,9.3-9.5S37,23,31.9,23L31.9,23z M31.9,46.7 c-7.7,0-14-6.4-14-14.2s6.3-14.2,14-14.2s14,6.4,14,14.2S39.6,46.7,31.9,46.7L31.9,46.7z M15.7,8.8c-3.9,0-7,3.2-7,7.1v33.2 c0,3.9,3.1,7.1,7,7.1h32.7c3.9,0,7-3.2,7-7.1V15.9c0-3.9-3.1-7.1-7-7.1C48.4,8.8,15.7,8.8,15.7,8.8z M48.3,60.9H15.7 C9.2,60.9,4,55.6,4,49.1V15.9C4,9.4,9.2,4.1,15.7,4.1h32.7C54.8,4.1,60,9.4,60,15.9v33.2C60,55.6,54.8,60.9,48.3,60.9L48.3,60.9z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li class="social-links__items">
+                        <svg class="tiktok-icon" aria-label="TikTok" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M18.1156 6.00883C17.038 5.30649 16.2609 4.18226 16.0181 2.8724C15.9659 2.58946 15.9368 2.29799 15.9368 2H12.4984L12.4929 15.7798C12.4352 17.3229 11.165 18.5616 9.60828 18.5616C9.12417 18.5616 8.66866 18.4407 8.26732 18.2295C7.34726 17.7454 6.71767 16.7811 6.71767 15.6715C6.71767 14.0777 8.01448 12.7808 9.60778 12.7808C9.90527 12.7808 10.1907 12.83 10.4606 12.9143V9.40412C10.1812 9.36599 9.89724 9.34241 9.60778 9.34241C6.11818 9.34241 3.27924 12.1814 3.27924 15.6715C3.27924 17.8126 4.34879 19.7074 5.98122 20.8532C7.00914 21.5751 8.2598 22 9.60828 22C13.0979 22 15.9368 19.1611 15.9368 15.6715V8.68372C17.2853 9.65144 18.9378 10.2218 20.7207 10.2218V6.7834C19.7605 6.7834 18.8661 6.49796 18.1156 6.00883Z"
+                                fill="white"></path>
+                        </svg>
+                    </li>
+                    <li class="social-links__items">
+                        <svg class="linkedin-icon" aria-label="LinkedIn" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.0407 19.0407H16.0778V14.4C16.0778 13.2926 16.0593 11.8704 14.537 11.8704C12.9926 11.8704 12.7556 13.0778 12.7556 14.3222V19.0444H9.79259V9.4963H12.637V10.8H12.6778C13.0741 10.0481 14.0407 9.25926 15.4852 9.25926C18.4889 9.25926 19.0444 11.237 19.0444 13.8074V19.0407H19.0407ZM6.44815 8.19259C5.4963 8.19259 4.72963 7.42222 4.72963 6.47037C4.72963 5.52222 5.49963 4.75185 6.44815 4.75185C7.3963 4.75185 8.16667 5.52222 8.16667 6.47037C8.16667 7.42222 7.3963 8.19259 6.44815 8.19259ZM4.96667 19.0407H7.93333V9.4963H4.96667V19.0407ZM20.5185 2H3.47741C2.66296 2 2 2.64444 2 3.44074V20.5556C2 21.3519 2.66296 22 3.47741 22H20.5185C21.333 22 22 21.3519 22 20.5556V3.44074C22 2.64444 21.337 2 20.5185 2Z">
+                            </path>
+                            <mask id="mask0_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2"
+                                width="20" height="20">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M19.0407 19.0407H16.0778V14.4C16.0778 13.2926 16.0593 11.8704 14.537 11.8704C12.9926 11.8704 12.7556 13.0778 12.7556 14.3222V19.0444H9.79259V9.4963H12.637V10.8H12.6778C13.0741 10.0481 14.0407 9.25926 15.4852 9.25926C18.4889 9.25926 19.0444 11.237 19.0444 13.8074V19.0407H19.0407ZM6.44815 8.19259C5.4963 8.19259 4.72963 7.42222 4.72963 6.47037C4.72963 5.52222 5.49963 4.75185 6.44815 4.75185C7.3963 4.75185 8.16667 5.52222 8.16667 6.47037C8.16667 7.42222 7.3963 8.19259 6.44815 8.19259ZM4.96667 19.0407H7.93333V9.4963H4.96667V19.0407ZM20.5185 2H3.47741C2.66296 2 2 2.64444 2 3.44074V20.5556C2 21.3519 2.66296 22 3.47741 22H20.5185C21.333 22 22 21.3519 22 20.5556V3.44074C22 2.64444 21.337 2 20.5185 2Z">
+                                </path>
+                            </mask>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </header>
     <main>
         <section class="First-section">
             <div class="news_links">
@@ -374,10 +659,13 @@
                         <p>McDonald’s CEO: Bigger burgers are coming</p>
                     </div>
                 </div>
-                <div class="featured2 boxs">
-                    <div class="container__title" data-editable="titleLink">
-                        <h3 class="container__title-text container_lead-plus-headlines-with-images__title-text"
+                <div class="featured2 boxs ">
+                    <div class="container__title arow-container" data-editable="titleLink">
+                        <h3 class="container__title-text container_lead-plus-headlines-with-images__title-text hover-arow"
                             data-editable="title">CNN TRAVEL</h3>
+                        <span class="material-symbols-outlined" id="arow">
+                            trending_flat
+                        </span>
                     </div>
                     <div>
                         <img src="Img/Featured2.jpg" alt="">
@@ -521,29 +809,32 @@
         <section class="fifth-section">
             <h3 class="watch__heading">Watch It</h3>
             <div class="watch__grid_container">
-                <div >
+                <div>
                     <div class="watch_box">
                         <img src="Img/watch1.webp" alt="">
                     </div>
-                    <span class="watch-description">'She wasn't too interested in talking': Cop pulls over 2-year-old</span>
+                    <span class="watch-description">'She wasn't too interested in talking': Cop pulls over
+                        2-year-old</span>
                 </div>
-                <div >
+                <div>
                     <div class="watch_box">
                         <img src="Img/watch2.webp" alt="">
                     </div>
-                    <span class="watch-description">This deceptively simple term could be key to the planet's survival</span>
+                    <span class="watch-description">This deceptively simple term could be key to the planet's
+                        survival</span>
                 </div>
-                <div >
+                <div>
                     <div class="watch_box">
                         <img src="Img/watch4.webp" alt="">
                     </div>
                     <span class="watch-description">This country may have the world's only space station by 2031</span>
                 </div>
-                <div >
+                <div>
                     <div class="watch_box">
                         <img src="Img/watch3.webp" alt="">
                     </div>
-                    <span class="watch-description">See pilot rescued after plane crashes in alligator-infested water</span>
+                    <span class="watch-description">See pilot rescued after plane crashes in alligator-infested
+                        water</span>
                 </div>
             </div>
         </section>
@@ -607,7 +898,14 @@
         <div class="Missed__It_container">
             <div class="missed_it1">
                 <div>
-                    <img src="Img/Gandhi.jpg" alt="">
+                    <div class="gandhi__g">
+                        <img src="Img/Gandhi.jpg" alt="">
+                        <div class="card__label-gandhi card__label--type-analysis">
+                            <!-- <span class="card__label-icon"></span> -->
+                            <span class="card__label-bull-span">
+                            <span class="card__label-indicator"></span>Analysis</span>
+                        </div>
+                    </div>
                     <span style="color: #b1b1b1;" class="a_short">Eddie Adams/AP</span>
                 </div>
                 <span class="container__headline-text">This ‘American Gandhi’ never got the attention he deserved
@@ -624,7 +922,8 @@
                 <p>Inside Dolly Parton’s new resort lodge in the Tennessee mountains</p>
                 <p>CNN Exclusive Chinese jet fired flares close to submarine-hunting helicopter in South China Sea,
                     Canadian Navy says</p>
-                <p class="border-none">Mosquitoes are driving these birds to extinction. With only 5 left in the wild, scientists are racing
+                <p class="border-none">Mosquitoes are driving these birds to extinction. With only 5 left in the wild,
+                    scientists are racing
                     to save the species</p>
             </div>
         </div>
@@ -655,6 +954,16 @@
                         </span>
                     </button>
                 </form>
+            </div>
+            <div class="container1__for_short">
+                <div>
+                    <svg class="icon-ui-avatar-default" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="User Avatar" role="img"><path d="M12 20.674a8.654 8.654 0 01-6.483-2.92c.168-.397.523-.758 1.067-1.076 1.334-.782 3.268-1.23 5.305-1.23 2.027 0 3.955.445 5.288 1.22.628.365.998.787 1.125 1.283A8.649 8.649 0 0112 20.674m1.521-7.203c-3.033 1.496-6.04-1.51-4.544-4.543a2.831 2.831 0 011.282-1.282c3.032-1.491 6.035 1.512 4.543 4.543a2.833 2.833 0 01-1.28 1.282m1.69-9.564c2.334.85 4.161 2.752 4.958 5.106.974 2.873.47 5.65-.941 7.773-.307-.486-.765-.912-1.382-1.27-.912-.53-2.054-.922-3.303-1.155a4.642 4.642 0 001.89-4.755 4.567 4.567 0 00-3.745-3.62 4.648 4.648 0 00-5.442 4.574c0 1.571.787 2.96 1.986 3.8-1.258.235-2.407.63-3.323 1.167-.536.314-.953.674-1.256 1.076A8.617 8.617 0 013.326 12c0-5.821 5.765-10.322 11.885-8.093m.112-1.368A10.052 10.052 0 002.539 15.321a9.611 9.611 0 006.138 6.14A10.052 10.052 0 0021.461 8.679a9.611 9.611 0 00-6.138-6.14"></path></svg>
+                </div>
+                <h3 id="login__footer">Login</h3>
+            </div>
+            <div class="container1__for_short " id="bottom-foo">
+                <h3>Live TV</h3>
+                <h3>Audio</h3>
             </div>
             <div class="footer_grid">
                 <div class="footer_box">
@@ -906,6 +1215,7 @@
                 Discovery Company. All Rights Reserved. <br> CNN Sans ™ &amp; © 2016 Cable News Network.</p>
         </section>
     </footer>
+    <script src="js/Mainpage.js"></script>
 </body>
 
 </html>
