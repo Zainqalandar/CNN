@@ -1,3 +1,5 @@
+
+  
 * {
     margin: 0%;
     padding: 0%;
@@ -6,6 +8,7 @@
 body {
     box-sizing: border-box;
     font-family: cnn_sans_display, helveticaneue, Helvetica, Arial, Utkal, sans-serif;
+    /* font-family: 'Noto Sans Display', sans-serif; */
 }
 
 /* Header  */
@@ -45,20 +48,22 @@ header {
 }
 
 .nav-ul-1 li {
-    padding: 9px;
+    padding: 13px;
 }
 
-.nav-ul-1 li>a {
+.nav-ul-1 li > a {
     text-decoration: none;
     color: #e6e6e6;
     font-size: 15px;
     display: block;
     white-space: nowrap;
     font-weight: 500;
+    line-height: 40px;
+    color: #ffffff;
 }
 
 .nav-ul-1 li:nth-child(3) {
-    margin-left: 15px;
+    margin-left: 13px;
 
 }
 
@@ -68,6 +73,7 @@ header {
     fill: #e6e6e6;
     transition: fill .4s ease;
     margin-right: 24px;
+    margin-top: 3px;
 }
 
 .cnn_log {
@@ -78,7 +84,7 @@ header {
 }
 
 .cnn_log img {
-    width: 102%;
+    width: 104%;
     height: 102%;
 }
 
@@ -87,11 +93,13 @@ header {
     display: flex;
     align-items: center;
     list-style: none;
+    cursor: pointer;
 }
 
 .nav-ul-btns li {
     padding: 10px;
     line-height: 20px;
+    font-size: 15px;
 }
 
 .nav-ul-btns li span {
@@ -114,6 +122,9 @@ header {
     height: 32px;
     font-weight: bold;
 }
+#login-btn:hover{
+    background-color: #c3b9a659;
+}
 
 .dropdown {
     position: relative;
@@ -122,7 +133,7 @@ header {
 .dropdown-content {
     background-color: black;
     position: absolute;
-    top: 36px;
+    top: 52px;
     height: 50px;
     width: 57px;
     display: none;
