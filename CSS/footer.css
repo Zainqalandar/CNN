@@ -28,7 +28,7 @@ footer {
     font-size: 16px;
     height: 38px;
     outline: none;
-    width: 100%;
+    width: 99%;
     padding: 0 0px 0 8px;
     box-shadow: none;
     color: #404040;
@@ -38,17 +38,19 @@ footer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 0;
+    right: 12px;
     border: none;
     box-shadow: none;
     background: 0 0;
     display: flex;
     align-items: center;
+    cursor: pointer;
     height: 32px;
     letter-spacing: 0;
     color: #404040;
     font-family: cnn_sans_display, helveticaneue, Helvetica, Arial, Utkal, sans-serif;
     font-weight: 700;
+    padding: 1px 6px;
 }
 
 .search-bar__arrow svg {
@@ -62,7 +64,7 @@ footer {
     font-weight: 700;
     line-height: 32px;
     letter-spacing: 0;
-    margin-right: 16px;
+    margin-right: 7px;
 }
 
 .search-bar__arrow {
@@ -202,7 +204,7 @@ footer {
 }
 
 .footer_ul-1>li {
-    padding: 9px;
+    padding: 9px 9px 9px 16px;
 }
 
 .footer_ul-1 li a {
@@ -244,6 +246,7 @@ footer {
     transition: fill .4s ease;
     height: 24px;
     width: 24px;
+    cursor: pointer;
 }
 
 .footer_under-div {
@@ -278,7 +281,8 @@ footer {
 
 /* Other nav  */
 .footer_nav_other {
-    padding: 0 24px 32px;
+    padding: 0 32px;
+    padding-bottom: 24px;
 }
 
 .footer__links {
@@ -292,7 +296,7 @@ footer {
 .footer__link {
     font-size: 12px;
     display: block;
-    margin-right: 10px;
+    margin-right: 16px;
     margin-bottom: 4px;
     text-decoration: none;
     font-family: cnn_sans_display, helveticaneue, Helvetica, Arial, Utkal, sans-serif;
@@ -300,6 +304,9 @@ footer {
     text-align: center;
     line-height: 20px;
     color: #e6e6e6;
+}
+.footer__link:hover{
+    text-decoration: underline;
 }
 
 .footer__copyright-text {

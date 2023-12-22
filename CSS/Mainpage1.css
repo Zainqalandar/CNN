@@ -668,7 +668,13 @@ h2 {
     gap: 25px;
     padding-bottom: 45px;
 }
-
+.hover_me{
+    cursor: pointer;
+}
+.hover_me:hover img {
+    opacity: 0.7;
+    cursor: pointer;
+}
 .gandhi__g {
     position: relative;
     cursor: pointer;
