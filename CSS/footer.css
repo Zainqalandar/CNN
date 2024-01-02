@@ -4,6 +4,10 @@ footer {
     color: white;
     height: auto;
 }
+.footer_mainChild{
+    max-width: 1440px;
+    margin: 0px auto;
+}
 
 .footer_big_section {
     padding: 0 32px;
@@ -56,6 +60,7 @@ footer {
 .search-bar__arrow svg {
     width: 12px;
     height: 12px;
+    margin-top: 5px;
 }
 
 .search-bar__button-text {
@@ -108,8 +113,8 @@ footer {
     text-decoration: underline;
     margin-bottom: 16px;
     font-size: 18px;
-    line-height: 20px;
-    font-weight: 700;
+    line-height: 26px;
+    font-weight: 400;
     color: #ffffff;
 }
 
@@ -180,6 +185,16 @@ footer {
     width: 30px;
     fill: #e6e6e6;
     transition: transform .25s ease;
+}
+.container1__for_short_me{
+    /* border: 2px solid red; */
+    color: red;
+    display: none !important;
+}
+.container1__for_short_you{
+    /* border: 2px solid red; */
+    color: white;
+    display: none !important;
 }
 
 /* Footer Navbar Section  */
@@ -323,14 +338,21 @@ footer {
 }
 
 /* ------------------------ */
+.center_center{
+
+    background-color: #0c0c0c;
+    overflow-y: scroll;
+}
 .subnav__footer_section {
     display: none;
-    background-color: #0c0c0c;
+    max-width: 1402px;
+    margin: 0px auto;
     padding-bottom: 40px;
     max-height: calc(100vh - 100px);
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     /* padding-top: 29px; */
 }
+
 
 .subnav__titles {
     border-bottom: 1px solid #404040;
@@ -441,6 +463,10 @@ footer {
 }
 
 @media screen and (max-width: 960px) {
+    .subnav__footer_section {
+    
+        overflow-y: scroll;
+    }
 
 
     .icon-ui-caret-down{
@@ -521,5 +547,21 @@ footer {
     }
     .container1__for_short{
         display: flex;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .subnav__titles {
+        
+        margin-top: 22px;
+    }
+    .container1__for_short_me{
+        display: flex !important;
+    }
+    .container1__for_short_you{
+        display: flex !important;
+    }
+    .subnav__footer_section {
+        padding-top: 24px;
     }
 }
