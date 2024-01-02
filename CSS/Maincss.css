@@ -279,9 +279,15 @@ header {
     .nav-ul-1 li:nth-child(3) {
         display: none;
     }
-    .nav-ul-btns li:last-child{
+
+    #login-btn {
+        padding: 5px 9px;
+    }
+
+    .nav-ul-btns li:last-child {
         margin-right: 11px;
     }
+
     .header__menu-icon-svg {
         margin-right: 16px;
     }
@@ -333,6 +339,7 @@ header {
     .nav-ul-btns li:nth-child(1) {
         display: none;
     }
+
     .nav-ul-btns li:nth-child(2) {
         display: none;
     }
@@ -341,6 +348,6 @@ header {
         display: none;
     }
 
-    
+
 
 }
